@@ -18,10 +18,6 @@ const routes: Routes = [
     component: IndexComponent
   },
   {
-    path: 'index',
-    loadChildren: () => import('./components/index/index.module').then(x => x.IndexModule)
-  },
-  {
     path: '**',
     redirectTo: 'login',
     pathMatch: 'full'
